@@ -9,8 +9,8 @@ const App = () => {
     const [selectedRecipe, setSelectedRecipe] = useState(null);
     const [show, setShow] = useState(false);
 
-    const YOUR_APP_ID = 'cb581511'; // Zamień na swoje ID aplikacji Edamam
-    const YOUR_APP_KEY = 'ee75db47dc14dd919d684e943a574a18'; // Zamień na swój klucz aplikacji Edamam
+    const YOUR_APP_ID = 'cb581511'; 
+    const YOUR_APP_KEY = 'ee75db47dc14dd919d684e943a574a18'; 
 
     const getRecipes = async () => {
         const result = await axios.get(`https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`);
